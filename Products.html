@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+    <meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+.badge-notify
+{
+    background:red;
+  }
+  .my-cart-icon-affix 
+  {
+    position: fixed;
+    z-index: 999;
+  }
+</style>
+
+
+<body>
+	
+	<div id = "wrapper">
+	
+	<header>   
+		<h1>Gaming</h1>
+		<h2>Controllers</h2>
+	
+	</header>
+
+    
+	<nav>
+		<ul>
+			<a href = "Home.html"><li>Home</li></a>
+			<a href = "Contact.html"><li>Contact</li></a>
+	        <a href = "Rate.html"><li>Rate our Product</li></a>
+			<a href = "Products.html"><li>Products</li></a>
+			<a href = "ShoppingCartExample.html"><li>Shop</li></a>	
+		</ul>
+			
+	 </nav>
+	
+ 
+   </div>
+
+	
+	<div id = "content">
+	 <h3>Gaming Controllers</h3>
+	<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img id="myImg" src="file:///C:/Users/Owner/Documents/Final_Project/GamingControllers.jpg" alt="F310 Gaming Controller" width="300" height="200">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+  <div class="w3-container">
+    <h3>F310 Gaming Controller</h3>
+	<h3>$20.00</h3>
+	<h3>Click to view image</h3>
+  </div>
+  </div>
+</div>
+
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+<img id="myImg" src="file:///D:/CTEC%20415/PS4_Controller.jpg" alt="PS4 Controller" width="300" height="200">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+  <div class="w3-container">
+    <h3>PS4 Controller</h3>
+	<h3>$20.00</h3>
+	<h3>Click to view image</h3>
+  </div>
+  
+  </div>
+</div>
+
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img id="myImg" src="file:///D:/CTEC%20415/nvidia_wireless_controller.jpg" alt="Nvidia Wireless Controller" width="300" height="200">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+  <div class="w3-container">
+  <h3>Nvidia Wireless Controller</h3>
+  <h3>$20.00</h3>
+  <h3>Click to view image</h3>
+
+
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img id="myImg" src="file:///D:/CTEC%20415/xbox_one_elite_controller.jpg" alt="Xbox One Elite Controller" width="300" height="200">
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+  <div class="w3-container">
+  <h3>Xbox One Controller</h3>
+  <h3>$20.00</h3>
+  <h3>Click to view image</h3>
+
+
+  </div>
+  </div>
+</div>
+
+</div>
+	
+
+
+
+</div>
+
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </footer>
+  
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+
+
+
+var modalImg = document.getElementById("img01");
+
+
+
+var captionText = document.getElementById("caption");
+
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+
+  
+
+</body>
+</html>

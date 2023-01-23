@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+    <meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+body {
+	margin: 0;
+	padding: 2em 0;
+	font: 100% Arial, sans-serif;
+}
+
+#cart {
+	width: 36em;
+	margin: 2em;
+}
+
+#cart table {
+	width: 100%;
+	border-collapse: collapse;
+	border-bottom: 1px solid #ccc;
+	border-spacing: 0;
+}
+
+#cart table tr:nth-child(odd) {
+
+  background: #f5f5f5;
+
+}
+
+#cart table caption {
+	text-transform: uppercase;
+	text-align: left;
+	padding-bottom: 4px;
+}
+
+#cart table th {
+	text-align: left;
+	padding: 5px;
+	background: #08c;
+	color: #fff;
+	border-left: 1px solid;
+}
+
+#cart table td {
+	padding: 5px;
+	border-bottom: 1px solid #ccc;
+}
+
+#cart table td input {
+	font: 1em Arial, sans-serif;
+	border: 1px solid #ccc;
+	background: #fff;
+}
+
+#cart div {
+	margin: 1em 0;
+	text-align: center;
+}
+
+#cart div button {
+	padding: 0.3em 1.2em;
+	background: #08c;
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	margin-right: 0.5em;
+	border: none;
+	font: 1em Arial, sans-serif;
+}
+
+
+
+#cart div input {
+	border: none;
+	padding: 0.3em 1.2em;
+	background: #08c;
+	color: #fff;
+	display: inline-block;
+	font: 1em Arial, sans-serif;
+}
+</style>
+
+
+<body>
+	
+	<div id = "wrapper">
+	
+	<header>   
+		<h1>Gaming</h1>
+		<h2>Controllers</h2>
+	
+	</header>
+
+    
+	<nav>
+		<ul>
+			<a href = "Home.html"><li>Home</li></a>
+			<a href = "Contact.html"><li>Contact</li></a>
+	        <a href = "Rate.html"><li>Rate our Product</li></a>
+			<a href = "Products.html"><li>Products</li></a>
+			<a href = "ShoppingCartExample.html"><li>Shop</li></a>
+		
+			
+			
+		</ul>
+			
+	 </nav>
+	
+ 
+   </div>
+
+	
+	 <div id = "content">
+	 <h3>Gaming Controllers</h3>
+	 <center>
+	 <form action="#" method="post" id="cart">
+
+<table summary="Your cart">
+
+  <caption>Shopping Cart</caption>
+  
+  <tr>
+  
+  	<th scope="col">Product</th>
+  	<th scope="col">Quantity</th>
+  	<th scope="col">Price</th>
+  
+  </tr>
+  
+  <tr>
+  	<td><img src="file:///D:/CTEC%20415/f310_gaminig_controller.jpg" style="width:50%"></td>
+  	<td><input type="text" value="1" class="qty" /></td>
+  	<td>20 USD</td>
+  </tr>
+  <tr>
+  	<td>  <img src="file:///D:/CTEC%20415/PS4_Controller.jpg" alt="Vernazza" style="width:50%"></td>
+  	<td><input type="text" value="2" class="qty" /></td>
+  	<td>20 USD</td>
+  </tr>
+  <tr>
+  	<td><img src="file:///D:/CTEC%20415/nvidia_wireless_controller.jpg" alt="Cinque Terre" style="width:56%"></td>
+  	<td><input type="text" value="4" class="qty" /></td>
+  	<td>20 USD</td>
+  </tr>
+   <tr>
+  	<td><img src="file:///D:/CTEC%20415/xbox_one_elite_controller.jpg" alt="Cinque Terre" style="width:56%"></td>
+  	<td><input type="text" value="4" class="qty" /></td>
+  	<td>20 USD</td>
+  </tr>
+</table>
+
+
+<div>
+	<input type="submit" value="Next step" id="next" name="next" />
+	<button id="calc">Subtotal</button> <span id="subtotal"></span>
+</div>
+</form>
+	 </div></center>
+
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </footer>
+<script src="//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js"></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+var Cart = {
+
+   $cart: $( "#cart" ),
+   $qtyFields: $( "input.qty" ),
+   $triggerBtn: $( "#calc" ),
+   $subTotalEl : $( "#subtotal" ),
+   
+   calculate: function() {
+   
+     var total = 0;
+     
+     this.$qtyFields.each(function() {
+     
+       var $field = $( this );
+       var amount = $field.parent().next().text();
+       var amountR = amount.replace( /\s+/g, "" ).replace( /USD/, "" );
+       var n1 = Number( $field.val() );
+       var n2 = Number( amountR );
+       
+       var sum = n1 * n2;
+       
+     
+       total += sum;
+     
+     });
+     
+     var totalStr = total.toFixed( 2 );
+     var tot = totalStr + " $";
+   
+    
+   
+     return tot;
+   },
+   
+   trigger: function() {
+   	 var self = this;
+   
+     this.$triggerBtn.on( "click", function( e ) {
+     
+       e.preventDefault();
+       
+       var subtotal = self.calculate();
+       
+       self.$subTotalEl.text( subtotal );
+       
+     
+       
+     
+     });
+   
+   
+   },
+   
+   init: function() {
+   
+     this.trigger();
+     
+     this.$triggerBtn.trigger( "click" );
+     
+     this.$cart.submit(function( e ) {
+     
+     	e.preventDefault();
+     
+     });
+   
+   
+   }
+
+};
+
+$(function() {
+
+   Cart.init();
+});
+</script>  
+
+
+  
+
+</body>
+</html>

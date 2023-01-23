@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+    <meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,100,300,700,400);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+}
+
+
+
+.cont {
+  width: 93%;
+  max-width: 350px;
+  text-align: center;
+  margin: 4% auto;
+  padding: 30px 0;
+  background: #111;
+  color: #EEE;
+  border-radius: 5px;
+  border: thin solid #444;
+  overflow: hidden;
+}
+
+hr {
+  margin: 20px;
+  border: none;
+  border-bottom: thin solid rgba(255,255,255,.1);
+}
+
+div.title { font-size: 2em; }
+
+h1 span {
+  font-weight: 300;
+  color: #Fd4;
+}
+
+div.stars 
+{
+  width: 270px;
+  display: inline-block;
+}
+
+input.f310, input.ps4, input.Nvidia, input.Xbox
+{ 
+display: none; 
+}
+
+label.f310, label.ps4, label.Nvidia, input.Xbox 
+{
+  float: center;
+  padding: 10px;
+  font-size: 36px;
+  color: #444;
+  transition: all .2s;
+}
+
+input.f310:checked ~ label.f310:before, input.ps4:checked ~ label.ps4:before,  input.Nvidia:checked ~ label.Nvidia:before, input.Xbox:checked ~ label.Xbox:before
+{
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+
+input.f310-5:checked ~ label.f310:before, input.ps4-5:checked ~ label.ps4:before,  input.Nvidia-5:checked ~ label.Nvidia:before, input.Xbox-5:checked ~ label.Xbox:before,       
+{
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+
+input.f310-1:checked ~ label.f310:before, input.ps4-1:checked ~ label.ps4:before,  input.Nvidia-1:checked ~ label.Nvidia:before, input.Xbox-1:checked ~ label.Xbox:before      
+{ 
+color: #F62; 
+}
+
+label.f310:hover, label.ps4:hover, label.Nvidia:hover, label.Xbox:hover
+{ 
+transform: rotate(-15deg) scale(1.3); 
+}
+
+label.f310:before, label.ps4:before, label.Nvidia:before, label.Xbox:before
+{
+  content: '\f006';
+  font-family: FontAwesome;
+}
+</style>
+
+<body>
+	
+	<div id = "wrapper">
+	
+	<header>   
+		<h1>Gaming</h1>
+		<h2>Controllers</h2>
+	
+	</header>
+
+    
+	<nav>
+		<ul>
+			<a href = "Home.html"><li>Home</li></a>
+			<a href = "Contact.html"><li>Contact</li></a>
+	        <a href = "Rate.html"><li>Rate our Product</li></a>
+			<a href = "Products.html"><li>Products</li></a>
+			<a href = "ShoppingCartExample.html"><li>Shop</li></a>
+		</ul>
+			
+	 </nav>
+	
+ 
+   </div>
+
+	
+	<div id = "content">
+	  <h3>Please Rate our Product</h3>
+	<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="file:///C:/Users/Owner/Documents/Final_Project/GamingControllers.jpg" alt="Vernazza" style="width:75%">
+  <div class="w3-container">
+    <h3>F310 Gaming Controller</h3>
+
+<div id ="stars">	
+<form action="">
+<input class="f310 f310-5" id="f310-5" type="radio" name="star" />
+<label class="f310 f310-5" for="f310-5"></label>
+<input class="f310 f310-4" id="f310-4" type="radio" name="star" />
+<label class="f310 f310-4" for="f310-4"></label>
+<input class="f310 f310-3" id="f310-3" type="radio" name="star" />
+<label class="f310 f310-3" for="f310-3"></label>
+<input class="f310 f310-2" id="f310-2" type="radio" name="star" />
+<label class="f310 f310-2" for="f310-2"></label>
+<input class="f310 f310-1" id="f310-1" type="radio" name="star" />
+<label class="f310 f310-1" for="f310-1"></label>
+</form>
+</div>
+  </div>
+  </div>
+</div>
+
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="file:///D:/CTEC%20415/PS4_Controller.jpg" alt="Vernazza" style="width:50%">
+  <div class="w3-container">
+  
+    <h3>PS4 Controller</h3>
+
+
+<div id ="stars">	
+<form action="">
+<input class="ps4 ps4-5" id="ps4-5" type="radio" name="star1" />
+<label class="ps4 ps4-5" for="ps4-5"></label>
+<input class="ps4 ps4-4" id="ps4-4" type="radio" name="star1" />
+<label class="ps4 ps4-4" for="ps4-4"></label>
+<input class="ps4 ps4-3" id="ps4-3" type="radio" name="star1" />
+<label class="ps4 ps4-3" for="ps4-3"></label>
+<input class="ps4 ps4-2" id="ps4-2" type="radio" name="star1" />
+<label class="ps4 ps4-2" for="ps4-2"></label>
+<input class="ps4 ps4-1" id="ps4-1" type="radio" name="star1" />
+<label class="ps4 ps4-1" for="ps4-1"></label>
+</form>
+</div>
+
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="file:///D:/CTEC%20415/nvidia_wireless_controller.jpg" alt="Cinque Terre" style="width:56%">
+  <div class="w3-container">
+  <h3>Nvidia Wireless Controller</h3>
+
+   <div id ="stars">	
+<form action="">
+<input class="Nvidia Nvidia-5" id="Nvidia-5" type="radio" name="star" />
+<label class="Nvidia Nvidia-5" for="Nvidia-5"></label>
+<input class="Nvidia Nvidia-4" id="Nvidia-4" type="radio" name="star" />
+<label class="Nvidia Nvidia-4" for="Nvidia-4"></label>
+<input class="Nvidia Nvidia-3" id="Nvidia-3" type="radio" name="star" />
+<label class="Nvidia Nvidia-3" for="Nvidia-3"></label>
+<input class="Nvidia Nvidia-2" id="Nvidia-2" type="radio" name="star" />
+<label class="Nvidia Nvidia-2" for="Nvidia-2"></label>
+<input class="Nvidia Nvidia-1" id="Nvidia-1" type="radio" name="star" />
+<label class="Nvidia Nvidia-1" for="Nvidia-1"></label>
+</form>
+</div>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="file:///D:/CTEC%20415/xbox_one_elite_controller.jpg" alt="Monterosso" style="width:100%">
+  <div class="w3-container">
+  <h3>Xbox One Elite Controller</h3>
+
+   <div id ="stars">	
+<form action="">
+<input class="Xbox Xbox-5" id="Xbox-5" type="radio" name="star" />
+<label class="Xbox Xbox-5" for="Xbox-5"></label>
+<input class="Xbox Xbox-4" id="Xbox-4" type="radio" name="star" />
+<label class="Xbox Xbox-4" for="Xbox-4"></label>
+<input class="Xbox Xbox-3" id="Xbox-3" type="radio" name="star" />
+<label class="Xbox Xbox-3" for="Xbox-3"></label>
+<input class="Xbox Xbox-2" id="Xbox-2" type="radio" name="star" />
+<label class="Xbox Xbox-2" for="Xbox-2"></label>
+<input class="Xbox Xbox-1" id="Xbox-1" type="radio" name="star" />
+<label class="Xbox Xbox-1" for="Xbox-1"></label>
+</form>
+</div>
+  </div>
+  </div>
+</div>
+
+</div>
+	
+
+</div>
+
+
+
+
+		
+
+
+
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </footer>
+  
+
+
+  
+
+</body>
+</html>
